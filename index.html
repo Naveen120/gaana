@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gaana</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/stylesheet/index.css">
+    <script src="./assets/model/model.js"></script>
+    <script src="./assets/createElement/carousal.js"></script>
+    <script src="./assets/createElement/topChart.js"></script>
+    <script src="./assets/createElement/newRelease.js"></script>
+    <script src="./assets/createElement/trendingSongs.js"></script>
+    <script src="./assets/createElement/gaanaSongs.js"></script>
+    <script src="./assets/createElement/editorsPicks.js"></script>
+    <script src="./assets/js/index.js"></script>
+</head>
+<body>
+
+    <!-- header -->
+    <nav class="navbar bg-warning navbar-light navbar-expand-lg py-2 fixed-top">
+        <a class="navbar-brand text-danger" href="#">gaana</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" type="button"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse" id="menu">
+            <ul class="navbar-nav navigation">
+                <li class="nav-item"><a class="nav-link text-uppercase text-danger" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase" href="#">Browse</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase" href="#">Discover</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase" href="#">Radio</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase" href="#">My Music</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase" href="#">World Music</a></li>
+            </ul>
+        </div>
+        <ul class="navbar-nav">
+            <button class="btn btn-outline-danger rounded-pill text-uppercase" type="button">Get Gaana Plus</button>
+            <li class="nav-item download"><a class="nav-link" href="">Download App</a></li>
+        </ul>
+        <ul class="navbar-nav custom">
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-apple"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-android"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-moon"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-language"></i></a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase text-danger" href="#">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <!-- search -->
+
+    <div class="search">
+        <input class="rounded-pill w-50 p-2 px-4 my-3 ml-5" type="search" placeholder="Search for Songs, Artists, Playlists and More">
+        <button class="rounded-pill px-4 py-2 bg-danger text-white" type="button"><i class="fas fa-search pr-3"></i>Search</button>
+        <input class="rounded-pill text-danger ml-3 px-2" type="button" value="trending 20">
+    </div>
+
+    <!-- queue -->
+
+    <div id="queue">
+        <div class="menu d-flex">
+            <div class="col">
+                <ul class="d-flex">
+                    <li><h5>Queue</h5></li>
+                    <li><a href="#"><i class="fas fa-random"></i></a></li>
+                    <li><a href="#"><i class="fas fa-sync-alt"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="col d-flex">
+                <button class="clear">clear</button>
+                <button class="save">save</button>
+            </div>
+        </div>
+        <ul id="song-list">
+    
+        </ul>
+    </div>
+
+    <!-- body content -->
+
+    <div class="main-body">
+        <!-- main carousal -->
+        <section class="carousal">
+            <div id="card-group" class="card-group py-4">
+                
+            </div>
+        </section>
+        <hr>
+
+        <!-- top-chart -->
+
+        <section class="top-chart">
+            <header><h2 class="text-uppercase ml-5">Top Charts</h2></header>
+            <div id="card-group-one" class="card-group py-4">
+                
+            </div>
+        </section>
+
+        <!-- new releases -->
+
+        <section class="new-releases">
+            <header><h2 class="text-uppercase ml-5">New Releases</h2></header>
+            <div id="card-group-two" class="card-group py-4">
+                
+            </div>
+        </section>
+
+        <!-- trending songs -->
+
+        <section class="trending-song">
+            <header><h2 class="text-uppercase ml-5">Trending Songs</h2></header>
+            <div id="card-group-three" class="card-group py-4">
+                
+            </div>
+        </section>
+
+        <!-- gaana songs -->
+
+        <section class="gaana-songs">
+            <header><h2 class="text-uppercase ml-5">Gaana Songs</h2></header>
+            <div id="card-group-four" class="card-group py-4">
+                
+            </div>
+        </section>
+
+        <!-- editors picks -->
+
+        <section class="editors-picks">
+            <header><h2 class="text-uppercase ml-5">Editors Picks</h2></header>
+            <div id="card-group-five" class="card-group py-4">
+                
+            </div>
+        </section>
+    </div>
+
+    <audio class="ml-5 mt-5" id="audio" controls src=""></audio>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

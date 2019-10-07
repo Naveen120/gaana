@@ -1,0 +1,173 @@
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,h7 {
+    margin: 0px;
+    padding: 0px;    
+}
+
+a {
+    text-decoration: none;
+}
+
+.col{
+    padding: 0px;
+}
+
+.navbar .custom i{
+    color: rgb(29, 28, 28);
+    font-size: 25px;
+}
+
+.navbar .custom .nav-item:hover a{
+    background-color: rgb(109, 109, 109);
+}
+
+.navbar{
+    font-weight: 600;
+}
+
+#menu .navigation .nav-item:hover a{
+    color: #dc3545;
+}
+
+.navbar .navbar-brand{
+    color: #dc3545;
+    font-size: 30px;
+}
+
+.search{
+    margin-top: 72px;
+    margin-left: 70px;
+}
+
+.search input, button{
+    border: none;
+}
+
+.search input[type="search"]{
+    background-color: rgb(221, 221, 221);
+    position: relative;
+}
+
+.search button{
+    position: absolute;
+    top: 88px;
+    left: 630px;
+}
+
+.main-body{
+    background-color: rgb(221, 221, 221);
+    margin-left: 85px;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+#card-group{
+    width: 200%;
+    animation: anim 10s infinite linear;
+}
+
+@keyframes anim{
+    0%,
+    19%{
+        transform: translate(0%);
+    }
+    20%,
+    39%{
+        transform: translate(-12.5%);
+    }
+    40%,
+    59%{
+        transform: translate(-25%);
+    }
+    60%,
+    79%{
+        transform: translate(-37.5%);
+    }
+    80%,
+    100%{
+        transform: translate(-50%);
+    }
+}
+
+hr{
+    margin-left: 30px;
+    width: 97%;
+    border: 2px solid rgb(143, 137, 137);
+}
+
+#queue {
+    background-color: rgb(221, 221, 221);
+    width: 85px;
+    height: 90%;
+    position: fixed;
+    top: 70px;  
+    box-shadow: 0px 8px 5px 5px rgba(0, 0 , 0, 0.2);    
+    border-radius: 0px 5px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+#queue .menu {
+    padding: 12px 5px;
+    border-bottom: 1px solid rgba(0, 0 , 0, 0.2);
+}
+
+#queue .menu ul li {
+    color: rgba(0, 0 , 0, 0.5);
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+
+#queue h5 {
+    padding-top: 2px;
+}
+
+#queue .menu i {
+    color: rgba(0, 0 , 0, 0.3);
+    font-size: 22px;
+    padding: 5px 0px 0px;
+}
+
+#queue .clear {
+    background-color: transparent;
+    border: none;
+    color: rgba(0, 0 , 0, 0.5);
+    font-weight: 600;
+    padding: 0px 20px;
+}
+
+#queue .save {
+    background-color: #E72C30;
+    border-radius: 25px;
+    border: none;
+    padding: 5px 18px;  
+    margin-left: 10px;
+}
+
+#queue:hover { 
+    width: 340px;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+#audio{
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
